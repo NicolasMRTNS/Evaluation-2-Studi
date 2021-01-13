@@ -16,15 +16,17 @@ ion-icon {
   color: #f51919;
   padding-right: 5px;
 }
-.currentNumber {
+.center-buttons {
+  margin-left: -20px;
+}
+.current-number {
   background-color: #f51919;
-  margin-right: 40%;
-  margin-left: 40%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  padding: 5px 5px 5px 5px;
   font-size: 1em;
 }
-.currentScore {
+.current-score {
   color: white;
   font-size: 3em;
   margin-top: 10px;
@@ -33,11 +35,11 @@ ion-icon {
 ion-button {
   font-size: 1.3em;
 }
-.playersName {
+.players-name {
   font-size: 3em;
   margin-bottom: 0;
 }
-.globalPlayersScore {
+.global-players-score {
   color: #f51919;
   font-size: 9em;
   margin-top: 0;
@@ -46,15 +48,19 @@ ion-button {
 .dice {
   box-shadow: 0px 0px 20px 0px #afacac;
   border-radius: 5px;
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 130px;
+  margin-top: 30px;
 }
-.secondRow {
+.second-row {
   margin-top: 5vh;
 }
 .last-row {
   margin-top: 10vh;
+}
+.empty-div {
+  height: 100px;
+  width: 100px;
 }

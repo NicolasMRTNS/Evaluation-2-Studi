@@ -40,22 +40,26 @@
             </ion-col>
           </ion-row>
           <!--Second row-->
-          <ion-row class="secondRow">
+          <ion-row class="second-row">
             <ion-col size="5">
+              <!--Player 1 row-->
               <ion-row>
                 <ion-col size="12">
-                  <p class="playersName">Player 1</p>
+                  <p class="players-name">Player 1</p>
                 </ion-col>
               </ion-row>
               <ion-row>
                 <ion-col size="12">
-                  <p class="globalPlayersScore">50</p>
+                  <p class="global-players-score">50</p>
                 </ion-col>
               </ion-row>
             </ion-col>
             <ion-col size="2">
+              <!--Dice row-->
               <ion-row>
-                <io-col size="12"></io-col>
+                <io-col size="12">
+                  <div class="empty-div"></div>
+                </io-col>
               </ion-row>
               <ion-row>
                 <ion-col size="12">
@@ -64,14 +68,15 @@
               </ion-row>
             </ion-col>
             <ion-col size="5">
+              <!--Player 2 row-->
               <ion-row>
                 <ion-col size="12">
-                  <p class="playersName">Player 2</p>
+                  <p class="players-name">Player 2</p>
                 </ion-col>
               </ion-row>
               <ion-row>
                 <ion-col size="12">
-                  <p class="globalPlayersScore">49</p>
+                  <p class="global-players-score">49</p>
                 </ion-col>
               </ion-row>
             </ion-col>
@@ -79,33 +84,39 @@
           <!--Third row-->
           <ion-row class="ion-align-items-center last-row">
             <ion-col size="5">
-              <section class="currentNumber">
+              <section class="current-number">
                 <p>Current</p>
-                <p class="currentScore">11</p>
+                <p class="current-score">11</p>
               </section>
             </ion-col>
             <ion-col class="button-layout" size="2">
-              <ion-row
-                ><ion-col size="12">
+              <ion-row>
+                <ion-col size="12">
                   <ion-button fill="clear" color="dark">
-                    <ion-icon name="reload-outline"></ion-icon>
+                    <ion-icon
+                      class="center-buttons"
+                      name="reload-outline"
+                    ></ion-icon>
                     Roll Dice
                   </ion-button>
                 </ion-col>
               </ion-row>
-              <ion-row
-                ><ion-col size="12">
+              <ion-row>
+                <ion-col size="12">
                   <ion-button fill="clear" color="dark">
-                    <ion-icon name="download-outline"></ion-icon>
+                    <ion-icon
+                      class="center-buttons"
+                      name="download-outline"
+                    ></ion-icon>
                     Hold
                   </ion-button>
                 </ion-col>
               </ion-row>
             </ion-col>
             <ion-col size="5">
-              <section class="currentNumber">
+              <section class="current-number">
                 <p>Current</p>
-                <p class="currentScore">22</p>
+                <p class="current-score">22</p>
               </section>
             </ion-col>
           </ion-row>
