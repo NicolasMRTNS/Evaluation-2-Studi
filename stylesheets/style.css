@@ -5,6 +5,21 @@ html {
 ion-col {
   text-align: center;
 }
+ion-button {
+  font-size: 1.3em;
+}
+.players-name {
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.global-players-score {
+  color: #f51919;
+  font-size: 4em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+}
 ion-icon {
   color: #f51919;
   padding-right: 5px;
@@ -21,21 +36,6 @@ ion-icon {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-ion-button {
-  font-size: 1.3em;
-}
-.players-name {
-  font-size: 2.5em;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.global-players-score {
-  color: #f51919;
-  font-size: 4em;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 300;
-}
 .dice {
   box-shadow: 0px 0px 20px 0px #afacac;
   border-radius: 5px;
@@ -43,6 +43,15 @@ ion-button {
   width: 130px;
   margin: 15px auto 0 auto;
 }
+/*Dot to indicate whose turn it is*/
+.player-turn {
+  background-color: #f51919;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 /*Media query for desktop display*/
 @media screen and (min-width: 992px) {
   ion-grid {
