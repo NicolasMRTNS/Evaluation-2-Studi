@@ -17,7 +17,85 @@
       href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
     />
     <!--End Ionic CDN-->
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
     <title>Dice Game</title>
   </head>
-  <body></body>
+  <body>
+    <ion-app>
+      <ion-content fullscreen>
+        <ion-grid class="ion-no-margin">
+          <!--First row-->
+          <ion-row>
+            <ion-col size="12">
+              <ion-button fill="clear" color="dark"
+                ><ion-icon name="add-circle-outline"></ion-icon>New
+                Game</ion-button
+              >
+            </ion-col>
+          </ion-row>
+          <!--Second row-->
+          <ion-row class="secondRow">
+            <ion-col size="5">
+              <p class="playersName">Player 1</p>
+            </ion-col>
+            <ion-col size="2"></ion-col>
+            <ion-col size="5">
+              <p class="playersName">Player 2</p>
+            </ion-col>
+          </ion-row>
+          <!--Third row-->
+          <ion-row>
+            <ion-col size="5">
+              <p class="globalPlayersScore">50</p>
+            </ion-col>
+            <ion-col size="2">
+              <div class="dice"></div>
+            </ion-col>
+            <ion-col size="5">
+              <p class="globalPlayersScore">49</p>
+            </ion-col>
+          </ion-row>
+          <!--Fourth row-->
+          <ion-row class="ion-align-items-center last-row">
+            <ion-col size="5">
+              <section class="currentNumber">
+                <p>Current</p>
+                <p class="currentScore">11</p>
+              </section>
+            </ion-col>
+            <ion-col class="button-layout" size="2">
+              <ion-row
+                ><ion-col size="12">
+                  <ion-button fill="clear" color="dark">
+                    <ion-icon name="reload-outline"></ion-icon>
+                    Roll Dice
+                  </ion-button>
+                </ion-col>
+              </ion-row>
+              <ion-row
+                ><ion-col size="12">
+                  <ion-button fill="clear" color="dark">
+                    <ion-icon name="download-outline"></ion-icon>
+                    Hold
+                  </ion-button>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+            <ion-col size="5">
+              <section class="currentNumber">
+                <p>Current</p>
+                <p class="currentScore">22</p>
+              </section>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+    </ion-app>
+  </body>
 </html>
