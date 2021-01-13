@@ -41,7 +41,38 @@ ion-button {
   border-radius: 5px;
   height: 130px;
   width: 130px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  margin: 15px auto 0 auto;
+}
+/*Media query for desktop display*/
+@media screen and (min-width: 992px) {
+  ion-grid {
+    padding: 30px 20px 20px 20px;
+    height: 100vh;
+  }
+  #startGame {
+    margin-top: 2vh;
+  }
+  ion-button {
+    font-size: 1.3em;
+  }
+  .players-name {
+    margin-top: 15vh;
+    font-size: 4em;
+  }
+  .global-players-score {
+    margin-bottom: 15vh;
+    font-size: 8em;
+  }
+  .current-number {
+    margin: 15vh 100px auto 100px;
+    align-items: flex-end;
+  }
+  .dice {
+    margin: 20vh auto 0 auto;
+    height: 200px;
+    width: 200px;
+  }
+  #rollDice {
+    margin-top: 30vh;
+  }
 }
