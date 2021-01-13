@@ -33,15 +33,15 @@
           <!--First row-->
           <ion-row>
             <ion-col size="12">
-              <ion-button fill="clear" color="dark"
-                ><ion-icon name="add-circle-outline"></ion-icon>New
-                Game</ion-button
-              >
+              <ion-button fill="clear" color="dark">
+                <ion-icon name="add-circle-outline"></ion-icon>
+                New Game
+              </ion-button>
             </ion-col>
           </ion-row>
           <!--Second row-->
           <ion-row class="second-row">
-            <ion-col size="5">
+            <ion-col size="12" size-lg="5">
               <!--Player 1 row-->
               <ion-row>
                 <ion-col size="12">
@@ -53,11 +53,19 @@
                   <p class="global-players-score">50</p>
                 </ion-col>
               </ion-row>
+              <ion-row>
+                <ion-col size="12">
+                  <section class="current-number">
+                    <p>Current</p>
+                    <p class="current-score">11</p>
+                  </section>
+                </ion-col>
+              </ion-row>
             </ion-col>
-            <ion-col size="2">
+            <ion-col size="12" size-lg="2">
               <!--Dice row-->
               <ion-row>
-                <io-col size="12">
+                <io-col size="0" size-lg="12">
                   <div class="empty-div"></div>
                 </io-col>
               </ion-row>
@@ -66,8 +74,37 @@
                   <div class="dice"></div>
                 </ion-col>
               </ion-row>
+              <ion-row>
+                <ion-col size="12"></ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-row>
+                    <ion-col size="12">
+                      <ion-button fill="clear" color="dark">
+                        <ion-icon
+                          class="center-buttons"
+                          name="reload-outline"
+                        ></ion-icon>
+                        Roll Dice
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col size="12">
+                      <ion-button fill="clear" color="dark">
+                        <ion-icon
+                          class="center-buttons"
+                          name="download-outline"
+                        ></ion-icon>
+                        Hold
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
             </ion-col>
-            <ion-col size="5">
+            <ion-col size="12" size-lg="5">
               <!--Player 2 row-->
               <ion-row>
                 <ion-col size="12">
@@ -79,45 +116,14 @@
                   <p class="global-players-score">49</p>
                 </ion-col>
               </ion-row>
-            </ion-col>
-          </ion-row>
-          <!--Third row-->
-          <ion-row class="ion-align-items-center last-row">
-            <ion-col size="5">
-              <section class="current-number">
-                <p>Current</p>
-                <p class="current-score">11</p>
-              </section>
-            </ion-col>
-            <ion-col class="button-layout" size="2">
               <ion-row>
                 <ion-col size="12">
-                  <ion-button fill="clear" color="dark">
-                    <ion-icon
-                      class="center-buttons"
-                      name="reload-outline"
-                    ></ion-icon>
-                    Roll Dice
-                  </ion-button>
+                  <section class="current-number">
+                    <p>Current</p>
+                    <p class="current-score">22</p>
+                  </section>
                 </ion-col>
               </ion-row>
-              <ion-row>
-                <ion-col size="12">
-                  <ion-button fill="clear" color="dark">
-                    <ion-icon
-                      class="center-buttons"
-                      name="download-outline"
-                    ></ion-icon>
-                    Hold
-                  </ion-button>
-                </ion-col>
-              </ion-row>
-            </ion-col>
-            <ion-col size="5">
-              <section class="current-number">
-                <p>Current</p>
-                <p class="current-score">22</p>
-              </section>
             </ion-col>
           </ion-row>
         </ion-grid>
