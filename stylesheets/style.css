@@ -52,6 +52,7 @@ ion-icon {
   height: 30px;
   border-radius: 50%;
   background-color: #f51919;
+  animation: 300ms ease-out 0s 1 growAndAppear;
 }
 /*Die first face*/
 .first-face {
@@ -114,6 +115,17 @@ ion-icon {
 .player-2-turn {
   background: linear-gradient(0deg, #eceaea 50%, #fff 50%);
 }
+
+/*Animation for die*/
+@keyframes growAndAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /*Media query for desktop display*/
 @media screen and (min-width: 992px) {
   ion-grid {

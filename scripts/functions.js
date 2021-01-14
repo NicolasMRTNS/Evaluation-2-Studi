@@ -37,6 +37,10 @@ const startNewGame = () => {
   firstPlayerTurn.classList.add('player-turn');
   playerTurnBgColor.classList.add('player-1-turn');
   gamePlaying = true;
+  firstPlayerCurrentScore.textContent = 0;
+  secondPlayerCurrentScore.textContent = 0;
+  firstPlayerGlobalScore.textContent = 0;
+  secondPlayerGlobalScore.textContent = 0;
   player1.winner = false;
   player2.winner = false;
 };
