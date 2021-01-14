@@ -46,7 +46,7 @@
               <ion-row>
                 <!--Player 1 name-->
                 <ion-col size="12">
-                  <p class="players-name">
+                  <p id="firstPlayerName" class="players-name">
                     Player 1
                     <span id="firstPlayerTurn"></span>
                   </p>
@@ -55,7 +55,9 @@
               <ion-row>
                 <!--Player 1 global score-->
                 <ion-col size="12">
-                  <p class="global-players-score">50</p>
+                  <p id="firstPlayerGlobalScore" class="global-players-score">
+                    50
+                  </p>
                 </ion-col>
               </ion-row>
               <ion-row>
@@ -63,7 +65,7 @@
                 <ion-col size="12">
                   <section class="current-number">
                     <p>Current</p>
-                    <p class="current-score">11</p>
+                    <p id="firstPlayerCurrentScore" class="current-score">11</p>
                   </section>
                 </ion-col>
               </ion-row>
@@ -101,7 +103,7 @@
                     </ion-col>
                   </ion-row>
                   <ion-row>
-                    <ion-col size="12">
+                    <ion-col id="hold" size="12">
                       <ion-button fill="clear" color="dark">
                         <ion-icon
                           class="center-buttons"
@@ -119,14 +121,16 @@
               <ion-row>
                 <!--Player 2 name-->
                 <ion-col size="12">
-                  <p class="players-name">Player 2</p>
+                  <p id="secondPlayerName" class="players-name">Player 2</p>
                   <span id="secondPlayerTurn"></span>
                 </ion-col>
               </ion-row>
               <ion-row>
                 <!--Player 2 global score-->
                 <ion-col size="12">
-                  <p class="global-players-score">49</p>
+                  <p id="secondPlayerGlobalScore" class="global-players-score">
+                    49
+                  </p>
                 </ion-col>
               </ion-row>
               <ion-row>
@@ -134,7 +138,9 @@
                 <ion-col size="12">
                   <section class="current-number">
                     <p>Current</p>
-                    <p class="current-score">22</p>
+                    <p id="secondPlayerCurrentScore" class="current-score">
+                      22
+                    </p>
                   </section>
                 </ion-col>
               </ion-row>
@@ -143,5 +149,7 @@
         </ion-grid>
       </ion-content>
     </ion-app>
+    <script src="scripts/documentVariables.js"></script>
+    <script src="scripts/functions.js"></script>
   </body>
 </html>
