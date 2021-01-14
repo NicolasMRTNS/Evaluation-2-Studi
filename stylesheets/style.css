@@ -38,11 +38,61 @@ ion-icon {
 }
 .dice {
   box-shadow: 0px 0px 20px 0px #afacac;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 130px;
   width: 130px;
   margin: 15px auto 0 auto;
+  padding: 6px;
 }
+/*Dice faces*/
+.dot {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f51919;
+}
+/*Die first face*/
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Die second face*/
+.second-face,
+.third-face {
+  display: flex;
+  justify-content: space-between;
+}
+.second-face .dot:nth-child(2) {
+  align-self: flex-end;
+}
+/*Die third face*/
+/*Applied rules from second-face*/
+.third-face .dot:nth-child(2) {
+  align-self: center;
+}
+.third-face .dot:nth-child(3) {
+  align-self: flex-end;
+}
+/*Die fourth face*/
+.fourth-face,
+.column,
+.fifth-face {
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  flex-direction: column;
+}
+/*Die fifth face*/
+/*Applied all rule for fourth-face*/
+.fifth-face .column:nth-of-type(2) {
+  justify-content: center;
+}
+/*Die sixth face*/
+/*Adding fourth-face class to the die and one more dot and it's ok*/
+
 /*Dot to indicate whose turn it is*/
 .player-turn {
   background-color: #f51919;
@@ -73,13 +123,18 @@ ion-icon {
     font-size: 8em;
   }
   .current-number {
-    margin: 15vh 100px auto 100px;
+    margin: 15vh 7vw auto 7vw;
     align-items: flex-end;
+    font-size: 1.2em;
+  }
+  .current-score {
+    font-size: 2.5em;
   }
   .dice {
     margin: 20vh auto 0 auto;
     height: 200px;
     width: 200px;
+    padding: 20px;
   }
   #rollDice {
     margin-top: 30vh;
