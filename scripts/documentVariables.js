@@ -12,7 +12,7 @@ let player1Name = document.getElementById('firstPlayerName');
 let player2Name = document.getElementById('secondPlayerName');
 
 /**
- * Variables for players scores
+ * Variables for players scores and turn
  */
 let firstPlayerGlobalScore = document.getElementById('firstPlayerGlobalScore');
 let firstPlayerCurrentScore = document.getElementById(
@@ -24,6 +24,9 @@ let secondPlayerGlobalScore = document.getElementById(
 let secondPlayerCurrentScore = document.getElementById(
   'secondPlayerCurrentScore'
 );
+let firstPlayerTurn = document.getElementById('firstPlayerTurn');
+let secondPlayerTurn = document.getElementById('secondPlayerTurn');
+let playerTurnBgColor = document.getElementById('playerTurnColor');
 
 /**
  * Die face control

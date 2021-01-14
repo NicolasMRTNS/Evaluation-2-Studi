@@ -5,6 +5,10 @@ let activePlayer;
 let gamePlaying = false;
 let currentScore = 0;
 let globalScore = 0;
+
+/**
+ * Objets to represent players
+ */
 let player1 = {
   name: player1Name,
   currentScore: firstPlayerCurrentScore,
@@ -23,13 +27,15 @@ let player2 = {
  * Setting players names + scores to 0
  */
 const startNewGame = () => {
-  player1Name.innerHTML = prompt('Player 1 name');
-  player2Name.innerHTML = prompt('Player 2 name');
-  firstPlayerCurrentScore.innerHTML = '0';
-  secondPlayerCurrentScore.innerHTML = '0';
-  firstPlayerGlobalScore.innerHTML = '0';
-  secondPlayerGlobalScore.innerHTML = '0';
+  player1Name.innerHTML = prompt(
+    'Choose a name for the first player (if the name is longer than 9 characters, it will be sliced)'
+  ).slice(0, 9);
+  player2Name.innerHTML = prompt(
+    'Choose a name for the second player (if the name is longer than 9 characters, it will be sliced)'
+  ).slice(0, 9);
   activePlayer = player1;
+  firstPlayerTurn.classList.add('player-turn');
+  playerTurnBgColor.classList.add('player-1-turn');
   gamePlaying = true;
   player1.winner = false;
   player2.winner = false;
@@ -82,7 +88,17 @@ holdScore.addEventListener('click', holdButton);
  * Next player function
  */
 const nextPlayer = () => {
-  activePlayer === player1
-    ? (activePlayer = player2)
-    : (activePlayer = player1);
+  if (activePlayer === player1) {
+    activePlayer = player2;
+    secondPlayerTurn.classList.add('player-turn');
+    firstPlayerTurn.classList.remove('player-turn');
+    playerTurnBgColor.classList.add('player-2-turn');
+    playerTurnBgColor.classList.remove('player-1-turn');
+  } else {
+    activePlayer = player1;
+    firstPlayerTurn.classList.add('player-turn');
+    secondPlayerTurn.classList.remove('player-turn');
+    playerTurnBgColor.classList.add('player-1-turn');
+    playerTurnBgColor.classList.remove('player-2-turn');
+  }
 };

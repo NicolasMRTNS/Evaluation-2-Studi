@@ -43,6 +43,7 @@ ion-icon {
   width: 130px;
   margin: 15px auto 0 auto;
   padding: 6px;
+  background-color: #fff;
 }
 /*Dice faces*/
 .dot {
@@ -100,8 +101,19 @@ ion-icon {
   height: 10px;
   border-radius: 50%;
   display: inline-block;
+  margin-left: 10px;
 }
-
+.current-player-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-1-turn {
+  background: linear-gradient(180deg, #eceaea 50%, #fff 50%);
+}
+.player-2-turn {
+  background: linear-gradient(0deg, #eceaea 50%, #fff 50%);
+}
 /*Media query for desktop display*/
 @media screen and (min-width: 992px) {
   ion-grid {
@@ -138,5 +150,14 @@ ion-icon {
   }
   #rollDice {
     margin-top: 30vh;
+  }
+  .player-turn {
+    margin-top: 15vh;
+  }
+  .player-1-turn {
+    background: linear-gradient(90deg, #eceaea 50%, #fff 50%);
+  }
+  .player-2-turn {
+    background: linear-gradient(-90deg, #eceaea 50%, #fff 50%);
   }
 }
