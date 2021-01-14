@@ -8,7 +8,7 @@ let gamePlaying = false;
  * Initialisation of a game
  * Setting players names + scores to 0
  */
-function startNewGame() {
+const startNewGame = () => {
   player1Name.innerHTML = prompt('Player 1 name');
   player2Name.innerHTML = prompt('Player 2 name');
   firstPlayerCurrentScore.innerHTML = '0';
@@ -17,7 +17,18 @@ function startNewGame() {
   secondPlayerGlobalScore.innerHTML = '0';
   activePlayer = 0;
   gamePlaying = true;
-  console.log(activePlayer, gamePlaying);
-}
+};
 
 newGameButton.addEventListener('click', startNewGame);
+
+/**
+ * Die roll
+ */
+const rollTheDie = () => {
+  if (gamePlaying) {
+    let randomNumber = Math.floor(Math.random() * 6) + 1;
+    dieFace.innerHTML = sixDieFaces[randomNumber - 1];
+  }
+};
+
+rollDice.addEventListener('click', rollTheDie);

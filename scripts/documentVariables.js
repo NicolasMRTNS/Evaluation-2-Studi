@@ -33,15 +33,11 @@ let dieFace = document.getElementById('dieFace');
 /**
  * HTML for die faces
  */
-const firstFace =
-  '<div class="dice first-face"><span class="dot"></span></div>';
-const secondFace =
-  '<div class="dice second-face"><span class="dot"></span><span class="dot"></span></div>';
-const thirdFace =
-  '<div class="dice third-face"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>';
-const fourthFace =
-  '<div class="dice fourth-face"><div class="column"><span class="dot"></span><span class="dot"></span></div><div class="column"><span class="dot"></span><span class="dot"></span></div></div>';
-const fifthFace =
-  '<div class="dice fifth-face"><div class="column"><span class="dot"></span><span class="dot"></span></div><div class="column"><span class="dot"></span></div><div class="column"><span class="dot"></span><span class="dot"></span></div></div>';
-const sixthFace =
-  '<div class="dice fourth-face"><div class="column"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="column"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>';
+const sixDieFaces = [
+  `<div class="dice first-face"><span class="dot"></span></div>`,
+  `<div class="dice second-face"><span class="dot"></span><span class="dot"></span></div>`,
+  `<div class="dice third-face"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>`,
+  `<div class="dice fourth-face"><div class="column"><span class="dot"></span><span class="dot"></span></div><div class="column"><span class="dot"></span><span class="dot"></span></div></div>`,
+  `<div class="dice fifth-face"><div class="column"><span class="dot"></span><span class="dot"></span></div><div class="column"><span class="dot"></span></div><div class="column"><span class="dot"></span><span class="dot"></span></div></div>`,
+  `<div class="dice fourth-face"><div class="column"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="column"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>`,
+];
