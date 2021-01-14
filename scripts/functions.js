@@ -3,6 +3,15 @@
  */
 let activePlayer;
 let gamePlaying = false;
+let currentScore = 0;
+let player1 = {
+  currentScore: firstPlayerCurrentScore,
+  globalScore: firstPlayerGlobalScore,
+};
+let player2 = {
+  currentScore: secondPlayerCurrentScore,
+  globalScore: secondPlayerGlobalScore,
+};
 
 /**
  * Initialisation of a game
@@ -15,7 +24,7 @@ const startNewGame = () => {
   secondPlayerCurrentScore.innerHTML = '0';
   firstPlayerGlobalScore.innerHTML = '0';
   secondPlayerGlobalScore.innerHTML = '0';
-  activePlayer = 0;
+  activePlayer = player1;
   gamePlaying = true;
 };
 
@@ -28,6 +37,13 @@ const rollTheDie = () => {
   if (gamePlaying) {
     let randomNumber = Math.floor(Math.random() * 6) + 1;
     dieFace.innerHTML = sixDieFaces[randomNumber - 1];
+    if (randomNumber !== 1) {
+      currentScore += randomNumber;
+      activePlayer.currentScore.textContent = currentScore;
+    } else {
+      currentScore = 0;
+      activePlayer.currentScore.textContent = currentScore;
+    }
   }
 };
 
