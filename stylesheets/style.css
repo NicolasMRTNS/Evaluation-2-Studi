@@ -8,6 +8,18 @@ ion-col {
 ion-button {
   font-size: 1.3em;
 }
+ion-modal {
+  text-transform: none;
+}
+ion-modal ul {
+  padding: 5px;
+  text-align: justify;
+  margin: auto;
+}
+ion-modal li {
+  margin: 10px;
+  line-height: 1.2em;
+}
 .players-name {
   font-size: 2.5em;
   margin-top: 0;

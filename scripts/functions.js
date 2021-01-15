@@ -43,6 +43,7 @@ const startNewGame = () => {
   secondPlayerGlobalScore.textContent = 0;
   player1.winner = false;
   player2.winner = false;
+  presentModal();
 };
 
 newGameButton.addEventListener('click', startNewGame);

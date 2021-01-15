@@ -2,29 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Ionic CDN-->
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
-    ></script>
+    <meta
+      name="description"
+      content="Roll & Hold is a two-player web game in which the players try to roll a die and obtain a total of 100 points."
+    />
+    <!--Ionic CDN CSS-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
     />
-    <!--End Ionic CDN-->
+    <!--End Ionic CDN CSS-->
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!--End Google Font-->
+    <meta name="robots" content="index follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/webp" href="./images/favicon.webp" />
     <link rel="stylesheet" href="./stylesheets/style.css" />
-    <title>Dice Game</title>
+    <title>Roll & Hold</title>
   </head>
   <body>
     <ion-app>
@@ -145,7 +144,22 @@
         </ion-grid>
       </ion-content>
     </ion-app>
-    <script src="scripts/documentVariables.js"></script>
-    <script src="scripts/functions.js"></script>
+    <!--Ionic CDN JS files-->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <!--End Ionic CDN JS files-->
+    <script defer src="./scripts/documentVariables.js"></script>
+    <script defer src="./scripts/modal.js"></script>
+    <script defer src="./scripts/functions.js"></script>
+    <noscript>
+      Please, to play the game, consider turning on JavaScript or using a
+      browser that supports JavaScript.
+    </noscript>
   </body>
 </html>
