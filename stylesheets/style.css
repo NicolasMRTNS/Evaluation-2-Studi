@@ -17,7 +17,7 @@ ion-modal ul {
   margin: auto;
 }
 ion-modal li {
-  margin: 10px;
+  margin: 8px;
   line-height: 1.2em;
 }
 .players-name {
@@ -151,7 +151,7 @@ ion-icon {
     font-size: 1.3em;
   }
   .players-name {
-    margin-top: 15vh;
+    margin-top: 13vh;
     font-size: 4em;
   }
   .global-players-score {

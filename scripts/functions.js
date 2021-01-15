@@ -28,10 +28,10 @@ let player2 = {
  */
 const startNewGame = () => {
   player1Name.innerHTML = prompt(
-    'Choose a name for the first player (if the name is longer than 9 characters, it will be sliced)'
+    'Choose a name for the first player (if the name is longer than 9 characters, it will get cut up)'
   ).slice(0, 9);
   player2Name.innerHTML = prompt(
-    'Choose a name for the second player (if the name is longer than 9 characters, it will be sliced)'
+    'Choose a name for the second player (if the name is longer than 9 characters, it will get cut up)'
   ).slice(0, 9);
   activePlayer = player1;
   firstPlayerTurn.classList.add('player-turn');

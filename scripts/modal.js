@@ -19,16 +19,21 @@ customElements.define(
       <ion-content class="ion-padding">
         <p>The rules are simple :
           <ul>
-            <li>The first player to hold 100 points in his global score wins</li>
+            <li>The first player to hold 100 points in his global score wins.</li>
             <li>To do so, roll the die. You can roll it as many times as you want. 
               The result adds up in your current score. However, if you roll the die 
-              and obtain 1, your current score is lost, and it's the end of your turn.
+              and obtain 1, your current score is lost, and it's the end of your turn. <br/>
               If you are happy with your current score, you can hold it by clicking the 
               'Hold' button, to add it to your global score, and it's the end of your
               turn.
             </li>
+            <li>The red dot on the right side of the player's name and the grey background
+              show whose turn it is.
+            </li>
             <li>Try to be strategic with your rolls, and don't be too greedy.</li>
-            <li>To start playing, click the 'X' on the top-right corner.</li>
+            <li>To close this dialog box and start playing, click the 'X' on the top-right 
+              corner.
+            </li>
             <li>One last word : Good luck and have fun.</li>
           </ul>
         </p>
