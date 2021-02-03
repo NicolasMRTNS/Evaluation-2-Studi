@@ -10,4 +10,6 @@ Contraintes : Respect de la maquette, un code structuré, le jeu doit être fonc
 
 Utilisation de Git : une branche main et une seconde dev.
 
+Note finale : 20/20. Remarque : ajouter une modal pour le nom des joueurs et le vainqueur.
+
 Adresse GitHub Pages : https://nicolasmrtns.github.io/Evaluation-2-Studi/
